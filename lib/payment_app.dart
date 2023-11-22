@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:payment/features/presentation/screens/my_cart_screen.dart';
 
-class paymentApp extends StatelessWidget {
-  const paymentApp({super.key});
+class PaymentApp extends StatelessWidget {
+  const PaymentApp({super.key});
 
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: MyCartScreen(),
 
     );
   }
